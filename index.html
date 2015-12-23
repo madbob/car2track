@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+		<link rel="stylesheet" href="car2track.css" />
+
+		<meta property="og:site_name" content="Car2Track" />
+		<meta property="og:title" content="Car2Track" />
+		<meta property="og:url" content="http://c2t.madbob.org/" />
+		<meta property="og:image" content="http://c2t.madbob.org/img/fb.png" />
+		<meta property="og:type" content="website" />
+		<meta property="og:country-name" content="Italy" />
+		<meta property="og:email" content="bob@linux.it" />
+		<meta property="og:locale" content="en_US" />
+	</head>
+
+	<body>
+		<div id="map">
+		</div>
+
+		<div id="loading">
+			<p>Loading... Please wait...</p>
+		</div>
+
+		<div id="info">
+			<p>
+				Car2Track is a visualization of <a href="https://www.car2go.com/">Car2Go</a>'s cars moved in <a href="https://www.car2go.com/en/torino/">Turin</a> in the latest 24 hours.
+			</p>
+			<p>
+				Paths of vehicles are approximated using the public API provided by <a href="http://route.madbob.org/">this instance of Routino</a>.
+			</p>
+			<p>
+				This project is not affiliated with Car2Go. Implemented and hosted by <a href="http://madbob.org/">Roberto -MadBob- Guido</a>. Code is <a href="http://github.com/madbob/car2track">publicly available</a> and released under the terms of AGPLv3.
+			</p>
+		</div>
+
+		<div id="list">
+		</div>
+
+		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+		<script src="js/gpx.js"></script>
+		<script src="js/car2track.js"></script>
+	</body>
+</html>

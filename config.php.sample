@@ -1,0 +1,13 @@
+<?php
+
+$config = [
+	'car2go' => [
+		'city' => 'torino'
+	],
+	'db' => [
+		'host' => 'localhost',
+		'user' => 'username',
+		'pass' => 'password',
+		'name' => 'car2track'
+	]
+];

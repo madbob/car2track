@@ -1,0 +1,70 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#map {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+#loading {
+	position: absolute;
+	width: 20%;
+	height: 20%;
+	left: 40%;
+	right: 40%;
+	top: 40%;
+	bottom: 40%;
+	background-color: #FFF;
+	font-size: 20px;
+	display: table;
+}
+
+#loading p {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#info {
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+	font-size: 15px;
+	line-height: 17px;
+	background-color: #FFF;
+	padding: 10px;
+	position: absolute;
+	width: 10%;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+}
+
+#info a {
+	color: #555;
+	text-decoration: none;
+}
+
+#list {
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+	font-size: 15px;
+	line-height: 17px;
+	background-color: #FFF;
+	padding: 10px;
+	position: absolute;
+	width: 20%;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 10;
+	overflow: auto;
+}
+
+#list p {
+	display: block;
+	background-color: #F00;
+	height: 4px;
+}

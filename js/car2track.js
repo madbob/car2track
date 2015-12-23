@@ -61,17 +61,14 @@ function handleTracks() {
 
 						track.on('mouseover', function(e) {
 							for (var i = 0; i < tracks.length; i++)
-								if (e.target != tracks[i])
-									map.removeLayer(tracks[i]);
+								tracks[i].setStyle({opacity: 0});
 
 							e.target.setStyle({opacity: 1});
 						});
 
 						track.on('mouseout', function(e) {
 							for (var i = 0; i < tracks.length; i++)
-								map.addLayer(tracks[i]);
-
-							e.target.setStyle({opacity: 0.5});
+								tracks[i].setStyle({opacity: 0.5});
 						});
 
 						track.on('loaded', function(e) {

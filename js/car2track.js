@@ -1,6 +1,6 @@
 var map = L.map('map').setView([45.0652, 7.6647], 13);
 
-L.tileLayer( "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+L.tileLayer( "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
 	{
 		attribution: "Map data &copy; <a href=\"http://openstreetmap.org\">OpenStreetMap</a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>"
 	}
@@ -42,9 +42,9 @@ function handleTracks() {
 
 					loadcount++;
 
-					$.get('http://route.madbob.org/router.cgi?transport=motorcar;' + coords + 'type=shortest', function(generated) {
+					$.get('https://route.madbob.org/router.cgi?transport=motorcar;' + coords + 'type=shortest', function(generated) {
 						var uuid = generated.substr(0, generated.indexOf("\n"));
-						var track = new L.GPX('http://route.madbob.org/results.cgi?uuid=' + uuid + ';type=shortest;format=gpx-track', {
+						var track = new L.GPX('https://route.madbob.org/results.cgi?uuid=' + uuid + ';type=shortest;format=gpx-track', {
 							async: true,
 							marker_options: {
 								startIconUrl: null,
